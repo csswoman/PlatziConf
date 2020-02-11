@@ -44,3 +44,7 @@
     color: white;
 
 }
+
+.card {
+    overflow: hidden;
+}
