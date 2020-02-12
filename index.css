@@ -61,3 +61,8 @@
 .badge-warning {
     color: white;
 }
+
+#conviertete-en-orador abbr {
+    color: #82ad36;
+    text-decoration: none;
+}
