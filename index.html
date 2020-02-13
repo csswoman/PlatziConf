@@ -42,7 +42,8 @@
                             <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                            <a class="nav-link text-platzi" href="#" data-toggle="modal"
+                                data-target="#modalCompra">Comprar tickets</a>
                         </li>
                 </div>
         </nav>
@@ -72,7 +73,8 @@
                                     y a los oradores de primer nivel que tenemos para ti. ¡Te esperamos!
                                 </p>
                                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                                <button type="button" class="btn btn-platzi">Comprar Tickets</button>
+                                <button type="button" class="btn btn-platzi" data-toggle="modal"
+                                    data-target="#modalCompra">Comprar Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -246,6 +248,56 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                        </div>
+                        <select class="custom-select custom-select-md mt-3">
+                            <option selected>Selecciona el número de tickets que quieres comprar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <div class="custom-control custom-checkbox mt-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Acepto los terminos y condiciones de
+                                la compra</label>
+                        </div>
+
+                        <fieldset disabled>
+                            <div class="form-group">
+                                <label for="disabledTextInput"></label>
+                                <input type="text" id="disabledTextInput" class="form-control"
+                                    placeholder="Se enviará un correo electrónico para confirmar su compra.">
+                            </div>
+                        </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-platzi">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
